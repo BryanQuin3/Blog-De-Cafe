@@ -2,9 +2,11 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --primario:#784d3c;
+    --primarioClaro:#9c6b57;
     --blanco:#fff;
     --gris:#e1e1e1;
     --negro:#000;
+    --negroClaro:#111;
 }
 html{
     box-sizing: border-box;
@@ -77,12 +79,15 @@ img{
 .header__texto{
     color: var(--blanco);
 }
+.barra{
+padding-top: 3rem;
+}
 @media (min-width: 768px) {
     .barra{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 3rem;
+        
     }
 }
 .logo{
@@ -104,6 +109,7 @@ img{
     display: block;
     font-size: 1.8rem;
     color: var(--blanco);
+    margin: 1.5rem 0;
 }
 @media (min-width: 768px) {
     .contenido--principal{
@@ -140,12 +146,16 @@ img{
     }
 }
 .boton--primario{
-    background-color: var(--negro);
-    
+    background-color: var(--negro); 
+}
+.boton--primario:hover{
+    background-color: var(--negroClaro); 
 }
 .boton--secundario{
-    background-color: var(--primario);
-    
+    background-color: var(--primario);   
+}
+.boton--secundario:hover{
+    background-color: var(--primarioClaro);   
 }
 .cursos{
     list-style: none;
@@ -228,7 +238,7 @@ img{
 .campo{
     display: flex;
     margin-bottom: 2rem;
-    padding-right: 2rem;
+    padding-right: 2rem;  
 }
 .campo__label{
     background-color: var(--blanco);
@@ -239,7 +249,11 @@ img{
 .campo__field{
     flex: 1;
     border: 1px solid var(--gris);
+    width: 100%;
 }
-.campo__field--texarea{
-    height: 20rem;
+@media (min-width: 768px) {
+    .campo__field--texarea{
+        height: 20rem;
+        width: 30rem;
+    }
 }
