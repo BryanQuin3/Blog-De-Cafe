@@ -49,6 +49,9 @@ h4{
 img{
     width: 100%;
 }
+ul{
+    padding-inline-start: 0rem;
+}
 /*utilidades*/
 .no-padding{
     padding: 0;
@@ -235,6 +238,19 @@ padding-top: 3rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.error,
+.mensajeEnviado{
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.error{
+    background-color: #ff2626;
+}
+.mensajeEnviado{
+    background-color: #00a841;
+}
 .campo{
     display: flex;
     margin-bottom: 2rem;
@@ -257,3 +273,4 @@ padding-top: 3rem;
         width: 30rem;
     }
 }
+
